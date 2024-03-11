@@ -28,6 +28,7 @@ public class Main {
 
             else if (exit.equals("add")) {
 
+            while(true) {
                 System.out.print("게시물 제목을 입력해주세요 : ");
                 String title = scan.nextLine();
                 titleList.add(title); // titleList 배열에 title을 추가
@@ -38,14 +39,23 @@ public class Main {
 
                 System.out.println("게시물이 등록되었습니다.\n");
 
-/*                System.out.print("다시 등록 하시겠습니까? : ");
-                String yn = scan.nextLine();
-                if(yn.equals("yes")) {
 
-                    continue;
+                System.out.print("다시 등록 하시겠습니까? : ");
+
+                String yn = scan.nextLine();
+
+                if (yn.equalsIgnoreCase("no")) {
+                    break;
                 }
+            }
+/*
                 else {
-                }*/
+                    while(true) {
+                        System.out.println("다시 입력해주세요");
+                        return;
+                    }
+                }
+*/
 
             }
             else if (exit.equals("list")) {
