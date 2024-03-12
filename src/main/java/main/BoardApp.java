@@ -24,6 +24,7 @@ public class BoardApp {
         ArrayList<String> ScriptList = new ArrayList<>();
         ArrayList<String> DateList = new ArrayList<>();
         ArrayList<Integer> NumList = new ArrayList<>();
+        ArrayList<Integer> ReadPoint = new ArrayList<>();
 
         titleList.add("안녕하세요 반갑습니다. 자바 공부중이에요.");
         titleList.add("자바 질문좀 할게요~");
@@ -41,7 +42,7 @@ public class BoardApp {
 /*      String title = ""; // 딱히 처음에 값이 필요 없음. 추후에 입력을 통해 넣을 것임.
         String Script = "";*/
 
-
+        ReadPoint.add(0);
         System.out.println("-------------");
         // 반복 횟수 정할 수 없음 => 무한 반복 구조
 
@@ -164,6 +165,9 @@ public class BoardApp {
                         String time = DateList.get(detNum - 1);
                         System.out.printf("등록 날짜 : %s\n", time);
 
+                        int read = ReadPoint.get(detNum -1);
+                        System.out.printf("조회수 : %d\n", read);
+
                     }
                     System.out.println("==================");
                 }
@@ -172,15 +176,21 @@ public class BoardApp {
             else if (exit.equals("search")) {
                 System.out.print("검색 키워드를 입력해주세요 : ");
                 String find = scan.next();
+//                boolean found = false;
 
-                if(find.contains("")) {
-                    scan.nextLine();
-                    String title = titleList.get(1);
-                    System.out.printf("제목 : %s\n", title);
+                for (int i = 0; i < titleList.size(); i++) {
+                    String title = titleList.get(i);
+//                    System.out.printf("제목 : %s\n", title); 여기다 쓰면 타이틀에 있는 내용들 다 나옴
+                    if (title.contains(find)) {
+                        System.out.printf("검색결과 - 제목 : %s\n", title);
+//                        found = true;
+
+                    }
+                    else {
+                        System.out.println("검색 결과가 없습니다.");
+                    }
                 }
-                else {
-                    System.out.println("검색결과가 없습니다.");
-                }
+
             }
             else if (exit.equals("signup")) {
 
