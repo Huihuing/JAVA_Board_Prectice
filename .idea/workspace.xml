@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52aa0e09-7acf-4e79-be2c-ee77bfb44f38" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/B_Update.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/B_Add.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/B_Delete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/B_Detail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/B_Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/B_Update.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/BoardApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/BoardApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,16 +118,6 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/main/Main.java</url>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/main/BoardApp.java</url>
-          <line>224</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/main/BoardApp.java</url>
-          <line>190</line>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
