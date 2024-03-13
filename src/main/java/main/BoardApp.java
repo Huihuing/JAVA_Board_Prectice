@@ -90,7 +90,7 @@ public class BoardApp {
                     int manu = Integer.parseInt(input);
                     switch (manu) {
                         case 1:
-                            System.out.print("\n[댓글 기능] : ");
+                            System.out.print("\n[댓글 작성중] : ");
                             String comment = scan.nextLine();
                             System.out.println("댓글이 성공적으로 등록되었습니다.\n");
                             break;
