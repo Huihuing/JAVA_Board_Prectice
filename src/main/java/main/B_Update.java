@@ -2,17 +2,27 @@ package main;
 import main.BoardApp;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Date;
+import java.util.ArrayList;
+import java.text.SimpleDateFormat;
 
 public class B_Update {
 
     private List<String> titleList;
     private List<String> ScriptList;
+    private List<String> DateList;
+    private List<Integer> NumList;
+    private List<Integer> ReadPoint;
     private Scanner scan;
 
-    public B_Update(List<String> titleList, List<String> ScriptList, Scanner scan) {
+    public B_Update(List<String> titleList, List<String> ScriptList, List<String> DateList, List<Integer> NumList, List<Integer> ReadPoint, Scanner scan) {
         this.titleList = titleList;
         this.ScriptList = ScriptList;
+        this.DateList = DateList;
+        this.NumList = NumList;
+        this.ReadPoint = ReadPoint;
         this.scan = scan;
+
     }
 
     public void update() {
@@ -21,7 +31,7 @@ public class B_Update {
             System.out.println(i + 1);
             String title = titleList.get(i);
             System.out.printf("제목 : %s\n", title);
-            System.out.println("==================\n");
+            System.out.println("==================");
         }
         System.out.print("수정할 게시물 번호 : ");
         int upNum = scan.nextInt();
