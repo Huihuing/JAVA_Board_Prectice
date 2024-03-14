@@ -1,26 +1,27 @@
 package main;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class BoardApp {
-    public void run() {
+    int calcul = 10; // ??
 
+    public void run() {
+        int Wrong_Value = -100;
         List<String> titleList = new ArrayList<>();
         List<String> ScriptList = new ArrayList<>();
         List<String> DateList = new ArrayList<>();
         List<String> IDList = new ArrayList<>();
+        List<List<String>> CommList = new ArrayList<>();
         List<Integer> NumList = new ArrayList<>();
         List<Integer> ReadPoint = new ArrayList<>();
 
+        
         Scanner scan = new Scanner(System.in);
 
         B_Update updatedata = new B_Update(titleList, ScriptList, DateList, NumList, ReadPoint, scan);
         B_Delete deletedata = new B_Delete(titleList, ScriptList, DateList, NumList, ReadPoint, scan);
-        B_Detail detaildata = new B_Detail(titleList, ScriptList, DateList, NumList, ReadPoint, scan);
+        B_Detail detaildata = new B_Detail(titleList, ScriptList, DateList, CommList, NumList, ReadPoint, scan, calcul);
         B_Add adddata = new B_Add(titleList, ScriptList, DateList, NumList, ReadPoint, scan);
 
 
@@ -42,6 +43,9 @@ public class BoardApp {
         DateList.add("2024.01.02 12:12:12");
         DateList.add("2024.01.03 12:12:12");
 
+        CommList.add(Collections.singletonList("1"));
+        CommList.add(Collections.singletonList("1"));
+        CommList.add(Collections.singletonList("1"));
         for (int i = 1; i < titleList.size() + 1; i++) { // intater로 해주면 for문으로 더 효율적으로 하자
             NumList.add(i);
             ReadPoint.add(1);
@@ -92,6 +96,7 @@ public class BoardApp {
                         case 1:
                             System.out.print("\n[댓글 작성중] : ");
                             String comment = scan.nextLine();
+                            CommList.add(Collections.singletonList(comment));
                             System.out.println("댓글이 성공적으로 등록되었습니다.\n");
                             break;
                         case 2:
