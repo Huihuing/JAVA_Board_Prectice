@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52aa0e09-7acf-4e79-be2c-ee77bfb44f38" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/B_Detail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/B_Detail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/BoardApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/BoardApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +46,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/main/B_Detail.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -65,7 +72,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "애플리케이션.Main.executor": "Run",
+    "애플리케이션.Main.executor": "Debug",
     "애플리케이션.syrup.executor": "Run"
   }
 }]]></component>
@@ -114,6 +121,11 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/main/Main.java</url>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/main/B_Detail.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
