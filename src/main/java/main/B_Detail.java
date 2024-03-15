@@ -57,10 +57,11 @@ public class B_Detail {
                 List<String> comments = CommList.get(calcul);
                 System.out.println("===============");
                 for (String comment : comments) {
+                    for (int i = CommList.size(); i<comments.size(); i++) {
                         System.out.printf("댓글내용: %s\n", comment);
                         String timec = DateList.get(calcul);
                         System.out.printf("댓글작성일 : %s\n", timec);
-
+                    }
                 }
             }
             else {
