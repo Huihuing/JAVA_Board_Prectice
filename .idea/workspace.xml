@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52aa0e09-7acf-4e79-be2c-ee77bfb44f38" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/FileExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/B_Detail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/B_Detail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/BoardApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/BoardApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/syrup/Article.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/syrup/syrr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/syrup/syrup.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +51,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/corretto-21.0.2/lib/src.zip!/java.base/java/lang/IndexOutOfBoundsException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-21.0.2/lib/src.zip!/java.base/java/util/ArrayList.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/main/B_Detail.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -68,15 +74,40 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/admin/IdeaProjects/JAVA_Board/src/main/java/org/example",
     "project.structure.last.edited": "모듈",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "애플리케이션.Main.executor": "Debug",
+    "애플리케이션.FileExample.executor": "Run",
+    "애플리케이션.Main.executor": "Run",
+    "애플리케이션.Test.executor": "Run",
+    "애플리케이션.org.example.Main.executor": "Run",
     "애플리케이션.syrup.executor": "Run"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\JAVA_Board\src\main\java\org\example" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\JAVA_Board\src\main\java\syrup" />
+    </key>
+  </component>
   <component name="RunManager" selected="애플리케이션.Main">
+    <configuration name="FileExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.FileExample" />
+      <module name="JAVA_Board.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="JAVA_Board.main" />
@@ -85,11 +116,11 @@
       </method>
     </configuration>
     <configuration name="syrup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="syrup.syrup" />
+      <option name="MAIN_CLASS_NAME" value="org.syrup" />
       <module name="JAVA_Board.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="syrup.*" />
+          <option name="PATTERN" value="org.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,6 +131,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="애플리케이션.FileExample" />
         <item itemvalue="애플리케이션.syrup" />
       </list>
     </recent_temporary>
@@ -123,9 +155,28 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/main/B_Detail.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/../untitled/src/main/java/org/example/test/Test.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/main/Main.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/main/Main.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/main/BoardApp.java</url>
+          <line>24</line>
+          <properties class="main.BoardApp" method="run">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

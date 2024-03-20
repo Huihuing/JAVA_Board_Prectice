@@ -3,19 +3,34 @@ package main;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+public class User{
+    private String ID;
+    private String password;
+    private String NickName;
+
+    public User(String ID, String password, String NickName) {
+        this.ID = ID;
+        this.password = password;
+        this.NickName = NickName;
+    }
+}
 public class BoardApp {
     int calcul = 10; // ??
+
+    public BoardApp() {
+        userList = new ArrayList<>();
+        scan = new Scanner(System.in);
+    }
 
     public void run() {
         int Wrong_Value = -100;
         List<String> titleList = new ArrayList<>();
         List<String> ScriptList = new ArrayList<>();
         List<String> DateList = new ArrayList<>();
-        List<String> IDList = new ArrayList<>();
         List<List<String>> CommList = new ArrayList<>();
         List<Integer> NumList = new ArrayList<>();
         List<Integer> ReadPoint = new ArrayList<>();
-
+        List<String> userList = new ArrayList<>();
         
         Scanner scan = new Scanner(System.in);
 
@@ -140,8 +155,19 @@ public class BoardApp {
                 }
 
             } else if (exit.equals("signup")) {
-                System.out.print("아이디를 입력해주세요 : ");
-                String ID = IDList.get(0);
+                System.out.print("아이디를 입력해주세요: ");
+                String ID = scan.nextLine();
+
+                System.out.println("비밀번호를 입력해주세요: ");
+                String password = scan.nextLine();
+
+                System.out.println("닉네임을 입력해주세요");
+                String NickName = scan.nextLine();
+
+                User newUser = new User(ID, password, NickName);
+                userList.add(newUser);
+
+                System.out.println("회원가입이 완료되었습니다.");
             } else if (exit.equals("login")) {
 
             } else {
